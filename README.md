@@ -42,5 +42,5 @@ L'application dispose d'un panneau d'administration sécurisé pour gérer les p
 ## 👤 Coordonnées de l'Étudiant
 
 *   **Nom & Prénom** : Nada Sellami
-*   **Groupe** : G6
+*   **Groupe** : G5
 *   **Email** : sellaminada82@gmail.com
