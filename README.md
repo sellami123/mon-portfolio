@@ -15,8 +15,8 @@ Ce projet présente mon portfolio personnel avec une section publique et une adm
 ## 🔐 Accès Administrateur (Démo)
 Pour accéder à l'interface d'administration :
 - **URL** : `/login`
-- **Utilisateur** : `admin`
-- **Mot de passe** : `admin123`
+- **Utilisateur** : `nada`
+- **Mot de passe** : `nada123`
 
 ## 🛠️ Installation et Démarrage
 1. Installer les dépendances :

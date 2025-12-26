@@ -21,11 +21,11 @@ const Login = ({ onLogin }) => {
         e.preventDefault();
         // Simulation simple d'authentification
         // Dans un vrai projet, cela appellerait une API
-        if (formData.username === 'admin' && formData.password === 'admin123') {
-            onLogin({ username: 'admin', role: 'admin' });
+        if (formData.username === 'nada' && formData.password === 'nada123') {
+            onLogin({ username: 'nada', role: 'admin' });
             navigate('/admin');
         } else {
-            setError('Identifiants incorrects (Essayez: admin / admin123)');
+            setError('Identifiants incorrects (Essayez: nada / nada123)');
         }
     };
 
@@ -52,7 +52,7 @@ const Login = ({ onLogin }) => {
                                 value={formData.username}
                                 onChange={handleChange}
                                 className="block w-full pl-10 pr-3 py-2 border border-gray-300 rounded-lg focus:ring-blue-500 focus:border-blue-500"
-                                placeholder="admin"
+                                placeholder="nada"
                                 required
                             />
                         </div>
