@@ -68,15 +68,9 @@ const About = () => {
     education: [
       {
         icon: <FaGraduationCap />,
-        degree: "Ingénieur en Informatique",
-        school: "École Supérieure des Sciences et Technologies",
-        year: "2018"
-      },
-      {
-        icon: <FaAward />,
-        degree: "Certifications React & WordPress",
-        school: "Meta & WordPress.org",
-        year: "2022-2023"
+        degree: "Licence en Informatique",
+        school: "En cours",
+        year: "Présent"
       }
     ]
   };
