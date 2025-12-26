@@ -1,8 +1,8 @@
-# Portfolio Personnel - Nada Sellami
+Portfolio Personnel - Nada Sellami
 
 Ce projet est un portfolio professionnel interactif développé avec React, présentant mes compétences, mes expériences et mes projets en tant que développeuse.
 
-## 🛠 Technologies Utilisées
+ Technologies Utilisées
 
 *   **Frontend** : React, Vite
 *   **Styling** : Tailwind CSS
@@ -10,7 +10,7 @@ Ce projet est un portfolio professionnel interactif développé avec React, pré
 *   **Gestion d'état** : Context API & LocalStorage
 *   **Services** : EmailJS (Formulaire de contact)
 
-## 🔗 Liens du Projet
+ Liens du Projet
 
 *   **GitHub Repository** : [https://github.com/sellami123/mon-portfolio](https://github.com/sellami123/mon-portfolio)
 *   **Déploiement Vercel** : [https://mon-portfolio-snowy-six.vercel.app](https://mon-portfolio-snowy-six.vercel.app)
@@ -32,7 +32,7 @@ Ce projet est un portfolio professionnel interactif développé avec React, pré
     npm run dev
     ```
 
-### Accès Admin
+ Accès Admin
 L'application dispose d'un panneau d'administration sécurisé pour gérer les projets.
 
 *   **URL de connexion** : `/login`
