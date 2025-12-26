@@ -53,7 +53,7 @@ const Navbar = () => {
                   <Link
                     key={item.name}
                     to={item.path}
-                    className="flex items-center gap-3 rounded-md px-4 py-3 text-sm text-gray-700 hover:bg-gray-100 transition"
+                    className="flex items-center gap-3 rounded-md px-4 py-3 text-sm text-gray-300 hover:bg-gray-800 hover:text-white transition"
                     onClick={() => setIsProfileDropdownOpen(false)}
                   >
                     <span className="text-gray-500">{item.icon}</span>
@@ -61,6 +61,14 @@ const Navbar = () => {
                   </Link>
 
                 ))}
+                {/* Admin Login Button */}
+                <Link
+                  to="/login"
+                  className="flex items-center gap-2 rounded-md px-4 py-3 text-sm bg-blue-600 text-white hover:bg-blue-700 transition font-medium"
+                >
+                  <FaUser />
+                  Admin
+                </Link>
               </div>
             </div>
           </div>
@@ -164,6 +172,15 @@ const Navbar = () => {
                 {item.name}
               </Link>
             ))}
+            {/* Admin Login Button */}
+            <Link
+              to="/login"
+              className="flex items-center gap-2 rounded-lg px-4 py-3 text-base font-medium bg-blue-600 text-white hover:bg-blue-700 transition"
+              onClick={() => setIsMobileMenuOpen(false)}
+            >
+              <FaUser />
+              Admin
+            </Link>
           </div>
 
           {/* Mobile User Section */}
