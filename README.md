@@ -39,7 +39,7 @@ L'application dispose d'un panneau d'administration sécurisé pour gérer les p
 *   **Nom d'utilisateur** : `nada`
 *   **Mot de passe** : `nada123`
 
-## 👤 Coordonnées de l'Étudiant
+ Coordonnées de l'Étudiant
 
 *   **Nom & Prénom** : Nada Sellami
 *   **Groupe** : G5
