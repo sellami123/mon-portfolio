@@ -166,11 +166,11 @@ const ContactForm = () => {
                 value={formData.nom}
                 onChange={handleChange}
                 onBlur={() => handleBlur('nom')}
-                className={`w-full px-4 py-3 rounded-lg border-2 transition-all duration-300 focus:outline-none focus:ring-2 ${touched.nom
-                    ? formValid.nom
-                      ? 'border-green-500 focus:ring-green-200 bg-green-50'
-                      : 'border-red-500 focus:ring-red-200 bg-red-50'
-                    : 'border-gray-300 focus:border-blue-500 focus:ring-blue-200'
+                className={`w-full px-4 py-3 rounded-lg border-2 transition-all duration-300 focus:outline-none focus:ring-2 text-gray-900 ${touched.nom
+                  ? formValid.nom
+                    ? 'border-green-500 focus:ring-green-200 bg-green-50'
+                    : 'border-red-500 focus:ring-red-200 bg-red-50'
+                  : 'border-gray-300 focus:border-blue-500 focus:ring-blue-200'
                   }`}
                 placeholder="Entrez votre nom complet"
                 required
@@ -202,11 +202,11 @@ const ContactForm = () => {
                 value={formData.email}
                 onChange={handleChange}
                 onBlur={() => handleBlur('email')}
-                className={`w-full px-4 py-3 rounded-lg border-2 transition-all duration-300 focus:outline-none focus:ring-2 ${touched.email
-                    ? formValid.email
-                      ? 'border-green-500 focus:ring-green-200 bg-green-50'
-                      : 'border-red-500 focus:ring-red-200 bg-red-50'
-                    : 'border-gray-300 focus:border-blue-500 focus:ring-blue-200'
+                className={`w-full px-4 py-3 rounded-lg border-2 transition-all duration-300 focus:outline-none focus:ring-2 text-gray-900 ${touched.email
+                  ? formValid.email
+                    ? 'border-green-500 focus:ring-green-200 bg-green-50'
+                    : 'border-red-500 focus:ring-red-200 bg-red-50'
+                  : 'border-gray-300 focus:border-blue-500 focus:ring-blue-200'
                   }`}
                 placeholder="votre.email@exemple.com"
                 required
@@ -238,11 +238,11 @@ const ContactForm = () => {
                 onChange={handleChange}
                 onBlur={() => handleBlur('message')}
                 rows="6"
-                className={`w-full px-4 py-3 rounded-lg border-2 transition-all duration-300 focus:outline-none focus:ring-2 resize-none ${touched.message
-                    ? formValid.message
-                      ? 'border-green-500 focus:ring-green-200 bg-green-50'
-                      : 'border-red-500 focus:ring-red-200 bg-red-50'
-                    : 'border-gray-300 focus:border-blue-500 focus:ring-blue-200'
+                className={`w-full px-4 py-3 rounded-lg border-2 transition-all duration-300 focus:outline-none focus:ring-2 resize-none text-gray-900 ${touched.message
+                  ? formValid.message
+                    ? 'border-green-500 focus:ring-green-200 bg-green-50'
+                    : 'border-red-500 focus:ring-red-200 bg-red-50'
+                  : 'border-gray-300 focus:border-blue-500 focus:ring-blue-200'
                   }`}
                 placeholder="Écrivez votre message ici..."
                 required
@@ -271,7 +271,7 @@ const ContactForm = () => {
                 id="priorité"
                 onChange={handleChange}
                 value={formData.priorité}
-                className="w-full px-4 py-3 rounded-lg border-2 border-gray-300 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 focus:outline-none transition-all duration-300 cursor-pointer"
+                className="w-full px-4 py-3 rounded-lg border-2 border-gray-300 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 focus:outline-none transition-all duration-300 cursor-pointer text-gray-900"
               >
                 <option value="haute">🔴 Haute - Urgent</option>
                 <option value="moyenne">🟡 Moyenne - Normal</option>
@@ -284,8 +284,8 @@ const ContactForm = () => {
               type="submit"
               disabled={!formValid.send || formValid.sending}
               className={`w-full py-4 rounded-lg font-bold text-lg transition-all duration-300 flex items-center justify-center gap-3 ${formValid.send && !formValid.sending
-                  ? 'bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white shadow-lg hover:shadow-xl transform hover:scale-105'
-                  : 'bg-gray-300 text-gray-500 cursor-not-allowed'
+                ? 'bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white shadow-lg hover:shadow-xl transform hover:scale-105'
+                : 'bg-gray-300 text-gray-500 cursor-not-allowed'
                 }`}
             >
               {formValid.sending ? (
