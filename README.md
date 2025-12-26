@@ -1,33 +1,46 @@
-# Mon Premier Site Web - Portfolio React
+# Portfolio Personnel - Nada Sellami
 
-Application web développée dans le cadre du projet académique de développement frontend.
-Ce projet présente mon portfolio personnel avec une section publique et une administration sécurisée.
+Ce projet est un portfolio professionnel interactif développé avec React, présentant mes compétences, mes expériences et mes projets en tant que développeuse.
 
-## 👤 Étudiant
-**Nom & Prénom** : Nada Sellami
-**Groupe** : [Votre Groupe Ici]
+## 🛠 Technologies Utilisées
 
-## 🚀 Fonctionnalités Clés
-- **Partie Publique** : Accueil, À Propos, Expériences, Projets, Contact.
-- **Administration** : Gestion protégée par authentification (Dashboard).
-- **Techniques** : React, Vite, Tailwind CSS, React Router, Hooks personnalisés.
+*   **Frontend** : React, Vite
+*   **Styling** : Tailwind CSS
+*   **Navigation** : React Router DOM
+*   **Gestion d'état** : Context API & LocalStorage
+*   **Services** : EmailJS (Formulaire de contact)
 
-## 🔐 Accès Administrateur (Démo)
-Pour accéder à l'interface d'administration :
-- **URL** : `/login`
-- **Utilisateur** : `nada`
-- **Mot de passe** : `nada123`
+## 🔗 Liens du Projet
 
-## 🛠️ Installation et Démarrage
-1. Installer les dépendances :
-   ```bash
-   npm install
-   ```
-2. Lancer le serveur de développement :
-   ```bash
-   npm run dev
-   ```
+*   **GitHub Repository** : [Insérez votre lien GitHub ici]
+*   **Déploiement Vercel** : [Insérez votre lien Vercel ici]
 
-## 📦 Livrables
-- Code source : GitHub (lien à ajouter)
-- Déploiement : Vercel (lien à ajouter)
+## 💻 Comment ça marche
+
+### Installation Locale
+1.  Cloner le repository :
+    ```bash
+    git clone [votre-lien-github]
+    ```
+2.  Installer les dépendances :
+    ```bash
+    cd mon-premiersiteweb-test
+    npm install
+    ```
+3.  Lancer le serveur de développement :
+    ```bash
+    npm run dev
+    ```
+
+### Accès Admin
+L'application dispose d'un panneau d'administration sécurisé pour gérer les projets.
+
+*   **URL de connexion** : `/login`
+*   **Nom d'utilisateur** : `nada`
+*   **Mot de passe** : `nada123`
+
+## 👤 Coordonnées de l'Étudiant
+
+*   **Nom & Prénom** : Nada Sellami
+*   **Groupe** : G6
+*   **Email** : sellaminada82@gmail.com
