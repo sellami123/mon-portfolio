@@ -35,7 +35,14 @@ export const ProjectProvider = ({ children }) => {
     // Load projects from localStorage or use initial projects
     const [projects, setProjects] = useState(() => {
         const saved = localStorage.getItem('projects');
-        return saved ? JSON.parse(saved) : initialProjects;
+        if (!saved) return initialProjects;
+
+        let parsed = JSON.parse(saved);
+        // Force add Laravel project if it's missing (helps with cache)
+        if (!parsed.find(p => p.id === 2 || p.title.includes("Laravel"))) {
+            parsed = [...parsed, initialProjects[1]];
+        }
+        return parsed;
     });
 
     // Save to localStorage whenever projects change

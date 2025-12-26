@@ -28,21 +28,6 @@ const Experience = () => {
         ],
         technologies: ["Flutter", "Dart", "React", "Node.js", "Firebase"]
       },
-      {
-        id: 2,
-        period: "2023 - 2024",
-        role: "Stagiaire Développeuse Web",
-        company: "Tech Start",
-        location: "Sfax, Tunisie",
-        type: "Stage",
-        description: "Participation au développement du frontend d'une application SaaS.",
-        achievements: [
-          "Implémentation de composants UI réutilisables avec Tailwind CSS",
-          "Correction de bugs et amélioration de l'expérience utilisateur",
-          "Collaboration avec l'équipe design pour l'intégration des maquettes"
-        ],
-        technologies: ["React", "Tailwind CSS", "Git", "Jira"]
-      }
     ],
 
     certifications: [
@@ -210,46 +195,7 @@ const Experience = () => {
           </div>
         </div>
 
-        {/* Certifications */}
-        <div className="mt-16 bg-white rounded-2xl shadow-lg p-8">
-          <h3 className="text-2xl font-bold text-gray-900 mb-6 flex items-center gap-3">
-            <FaPaperclip className="text-blue-600" />
-            Certifications & Documents
-          </h3>
 
-          <ul className="divide-y divide-gray-200">
-            {user.certifications.map((cert, index) => (
-              <li key={index} className="py-6 hover:bg-gray-50 transition rounded-lg px-4">
-                <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
-
-                  <div className="flex items-start gap-4 flex-1">
-                    <div className="flex-shrink-0 w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center">
-                      <FaPaperclip className="text-blue-600 text-xl" />
-                    </div>
-
-                    <div className="flex-1 min-w-0">
-                      <h4 className="text-lg font-semibold text-gray-900 mb-1">{cert.name}</h4>
-                      <p className="text-sm text-gray-600 mb-1">{cert.organization} • {cert.date}</p>
-                      <div className="flex items-center gap-3 text-sm text-gray-500">
-                        <span>{cert.file}</span>
-                        <span>•</span>
-                        <span>{cert.size}</span>
-                      </div>
-                    </div>
-                  </div>
-
-                  <a
-                    href={cert.url}
-                    className="inline-flex items-center gap-2 px-6 py-3 bg-blue-600 text-white rounded-lg font-medium hover:bg-blue-700 transition shadow-md hover:shadow-lg"
-                  >
-                    <FaDownload />
-                    Télécharger
-                  </a>
-                </div>
-              </li>
-            ))}
-          </ul>
-        </div>
 
       </div>
     </section>
