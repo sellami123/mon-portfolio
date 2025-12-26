@@ -12,8 +12,8 @@ Ce projet est un portfolio professionnel interactif développé avec React, pré
 
 ## 🔗 Liens du Projet
 
-*   **GitHub Repository** : [Insérez votre lien GitHub ici]
-*   **Déploiement Vercel** : [Insérez votre lien Vercel ici]
+*   **GitHub Repository** : [https://github.com/sellami123/mon-portfolio](https://github.com/sellami123/mon-portfolio)
+*   **Déploiement Vercel** : [https://mon-portfolio-snowy-six.vercel.app](https://mon-portfolio-snowy-six.vercel.app)
 
 ## 💻 Comment ça marche
 
