@@ -1,17 +1,9 @@
 import React from 'react';
 import { FaGithub, FaExternalLinkAlt, FaCode } from 'react-icons/fa';
+import { useProjects } from '../../context/ProjectContext';
 
 const Projects = () => {
-    const projects = [
-        {
-            title: "GymFuel - Application Fitness",
-            description: "Application mobile complète de fitness et nutrition développée avec Flutter. Suivi des entraînements, planification des repas, et gestion de profil utilisateur avec base de données locale Hive et fonctionnalités natives (caméra).",
-            tags: ["Flutter", "Dart", "Hive", "Mobile Dev"],
-            image: "https://images.unsplash.com/photo-1517836357463-d25dfeac3438?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80", // Image de fitness
-            github: "https://github.com/nadasellami/GymFuel", // Lien GitHub hypothétique ou vide
-            demo: "#"
-        }
-    ];
+    const { projects } = useProjects();
 
     return (
         <section className="bg-gray-50 py-24 sm:py-32">

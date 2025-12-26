@@ -2,6 +2,7 @@
 import './App.css';
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 import { useState } from 'react';
+import { ProjectProvider } from './context/ProjectContext';
 
 // Layouts
 import Layout from './Pages/Layout';
@@ -60,40 +61,42 @@ function App() {
   };
 
   return (
-    <Routes>
-      {/* Routes Publiques avec Layout */}
-      <Route path="/" element={<Layout />}>
-        <Route index element={<Hero />} />
-        <Route path="about" element={<About />} />
-        <Route path="experience" element={<Experience />} />
-        <Route path="projects" element={<Projects />} />
-        <Route path="contact" element={<ContactForm />} />
-      </Route>
+    <ProjectProvider>
+      <Routes>
+        {/* Routes Publiques avec Layout */}
+        <Route path="/" element={<Layout />}>
+          <Route index element={<Hero />} />
+          <Route path="about" element={<About />} />
+          <Route path="experience" element={<Experience />} />
+          <Route path="projects" element={<Projects />} />
+          <Route path="contact" element={<ContactForm />} />
+        </Route>
 
-      {/* Route Login */}
-      <Route path="/login" element={<Login onLogin={handleLogin} />} />
+        {/* Route Login */}
+        <Route path="/login" element={<Login onLogin={handleLogin} />} />
 
-      {/* Routes Admin Protégées */}
-      <Route
-        path="/admin"
-        element={
-          <ProtectedRoute
-            isAllowed={user.isAuthenticated && user.role === 'admin'}
-            redirectPath="/login"
-          >
-            <AdminLayout onLogout={handleLogout} />
-          </ProtectedRoute>
-        }
-      >
-        <Route index element={<AdminDashboard />} />
-        <Route path="users" element={<AdminUsers />} />
-        <Route path="analytics" element={<AdminAnalytics />} />
-        <Route path="settings" element={<AdminSettings />} />
-      </Route>
+        {/* Routes Admin Protégées */}
+        <Route
+          path="/admin"
+          element={
+            <ProtectedRoute
+              isAllowed={user.isAuthenticated && user.role === 'admin'}
+              redirectPath="/login"
+            >
+              <AdminLayout onLogout={handleLogout} />
+            </ProtectedRoute>
+          }
+        >
+          <Route index element={<AdminDashboard />} />
+          <Route path="users" element={<AdminUsers />} />
+          <Route path="analytics" element={<AdminAnalytics />} />
+          <Route path="settings" element={<AdminSettings />} />
+        </Route>
 
-      {/* 404 */}
-      <Route path="*" element={<NotFound />} />
-    </Routes>
+        {/* 404 */}
+        <Route path="*" element={<NotFound />} />
+      </Routes>
+    </ProjectProvider>
   );
 }
 
