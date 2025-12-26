@@ -3,13 +3,14 @@ import emailjs from '@emailjs/browser';
 export const sendEmail = async (formData) => {
   try {
     await emailjs.send(
-      'service_625ht2o',
-      'template_ptfopr1',
+      'service_abc123',        // Service ID
+      'template_sktfedc',      // Template ID
       formData,
-      'OLUuBuw92fRDp7An9'
+      'vRtSLxKvMxTAX2OYx'     // Public Key
     );
     return { success: true };
   } catch (error) {
-    return { success: false };
+    console.error('Email error:', error);
+    return { success: false, error };
   }
 };
