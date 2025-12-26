@@ -20,6 +20,15 @@ export const ProjectProvider = ({ children }) => {
             image: "https://images.unsplash.com/photo-1517836357463-d25dfeac3438?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
             github: "https://github.com/nadasellami/GymFuel",
             demo: "#"
+        },
+        {
+            id: 2,
+            title: "Système de Gestion Scolaire - Laravel",
+            description: "Application web complète de gestion scolaire développée avec Laravel. Gestion des classes, des étudiants, calcul automatique des moyennes, suivi des notes et génération de rapports. Interface admin intuitive et système d'authentification sécurisé.",
+            tags: ["Laravel", "PHP", "MySQL", "Bootstrap"],
+            image: "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+            github: "https://github.com/nadasellami/gestion-scolaire",
+            demo: "#"
         }
     ];
 
