@@ -51,7 +51,7 @@ const Login = ({ onLogin }) => {
                                 name="username"
                                 value={formData.username}
                                 onChange={handleChange}
-                                className="block w-full pl-10 pr-3 py-2 border border-gray-300 rounded-lg focus:ring-blue-500 focus:border-blue-500"
+                                className="block w-full pl-10 pr-3 py-2 border border-gray-300 rounded-lg focus:ring-blue-500 focus:border-blue-500 text-gray-900"
                                 placeholder="nada"
                                 required
                             />
@@ -71,7 +71,7 @@ const Login = ({ onLogin }) => {
                                 name="password"
                                 value={formData.password}
                                 onChange={handleChange}
-                                className="block w-full pl-10 pr-3 py-2 border border-gray-300 rounded-lg focus:ring-blue-500 focus:border-blue-500"
+                                className="block w-full pl-10 pr-3 py-2 border border-gray-300 rounded-lg focus:ring-blue-500 focus:border-blue-500 text-gray-900"
                                 placeholder="••••••••"
                                 required
                             />
